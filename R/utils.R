@@ -1,5 +1,3 @@
-#' @export
-#' @rdname get_slide_id
 make_slide_url <- function(x) {
   x = derive_presentation_id(x)
   x = paste0("https://docs.google.com/presentation/d/",x)

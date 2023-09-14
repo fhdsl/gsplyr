@@ -1,9 +1,18 @@
-
+#' Download Google Slides
+#'
+#' @param link Link to Google slides presentation
+#' @param type Type of file to download as output. Usually
+#' `pdf` or `pptx`
+#'
+#' @note This downloads presentations if they are public and also try to make
+#' sure it does not fail on large files
+#' @return Downloaded file (in temporary directory)
+#' @export
 download = function(link, type = "pptx") {
   stopifnot(is.character(link))
-  id = get_slide_id(link)
+  id = derive_presentation_id(link)
   # construct URL to export image file from Google Slides
-  url = export_url(id = id, page_id = NULL, type = type)
+  url = export_link(id = id, page_id = NULL, type = type)
   tmp = tempfile(fileext = paste0(".", type))
 
   # retrieve from url and write response to disk

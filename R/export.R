@@ -1,5 +1,4 @@
 # Constructs a link to export an image file from a Google Slides
-# id: Presentation ID
 export_link <- function(id, page_id = NULL, type = "png") {
   url <- paste0("https://docs.google.com/presentation/d/",
                 id, "/export/", type, "?id=", id)
@@ -10,13 +9,11 @@ export_link <- function(id, page_id = NULL, type = "png") {
 }
 
 # Constructs an URL to export to PPTX
-# id: Presentation ID
 export_link_pptx <- function(id) {
   export_link(id, page_id = NULL, type = "pptx")
 }
 
 # Constructs an URL to export to PDF
-# id: Presentation ID
 export_link_pdf <- function(id) {
   export_link(id, page_id = NULL, type = "pdf")
 }

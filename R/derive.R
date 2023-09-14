@@ -21,18 +21,22 @@ derive_presentation_id <- function(link) {
 }
 
 #' Derive Google Drive Folder ID
+#'
+#' @param link URL of Google Drive Folder
+#' @return A character vector
+#'
 #' @export
 #' @examples
 #' x = "https://drive.google.com/drive/folders/1pXBQQdd1peI56GtQT-jEZ59xSmhqQlFC?usp=sharing"
-#' get_folder_id(x)
+#' derive_folder_id(x)
 #' x = "1pXBQQdd1peI56GtQT-jEZ59xSmhqQlFC"
-#' get_folder_id(x)
-derive_folder_id = function(x) {
-  res = httr::parse_url(x)
-  x = res$path
-  x = sub(".*folders/", "", x)
-  x = sub("[?].*", "", x)
-  x = x[ nchar(x) > 5]
-  x = trimws(x)
-  x
+#' derive_folder_id(x)
+derive_folder_id <- function(link) {
+  res = httr::parse_url(link)
+  link = res$path
+  link = sub(".*folders/", "", link)
+  link = sub("[?].*", "", link)
+  link = link[ nchar(link) > 5]
+  link = trimws(link)
+  link
 }
