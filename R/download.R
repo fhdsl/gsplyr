@@ -39,8 +39,8 @@ download = function(link, type = "pptx") {
 
   if (warn_user) {
     stop(
-      paste("Is link sharing enabled?",
-            "It's possible that this presentation isn't accessible."),
+      paste("Please set General access of the slides to 'Anyone with the link'.",
+            "This presentation isn't accessible."),
       call. = FALSE
     )
   }
