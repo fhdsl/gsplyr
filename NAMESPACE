@@ -3,5 +3,4 @@
 export(derive_folder_id)
 export(derive_presentation_id)
 export(download)
-importFrom(cli,cli_alert_warning)
 importFrom(httr,parse_url)

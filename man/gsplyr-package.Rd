@@ -4,12 +4,12 @@
 \name{gsplyr-package}
 \alias{gsplyr}
 \alias{gsplyr-package}
-\title{gsplyr: What the Package Does (One Line, Title Case)}
+\title{gsplyr: Google Slides Manipulation}
 \description{
-What the package does (one paragraph).
+The goal of gsplyr is to provide a set of functions designed for the manipulation of Google Slides.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Howard Baek \email{howardbaek.fh@gmail.com} (\href{https://orcid.org/009-0000-8942-1618}{ORCID})
 
 }
 \keyword{internal}

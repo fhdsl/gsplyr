@@ -38,9 +38,10 @@ download = function(link, type = "pptx") {
   }
 
   if (warn_user) {
-    cli::cli_alert_warning(
+    stop(
       paste("Is link sharing enabled?",
-            "It's possible that this presentation isn't accessible.")
+            "It's possible that this presentation isn't accessible."),
+      call. = FALSE
     )
   }
 
