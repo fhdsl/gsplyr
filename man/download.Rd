@@ -7,7 +7,7 @@
 download(link, type = "pptx")
 }
 \arguments{
-\item{link}{Link to Google slides presentation}
+\item{link}{Link to Google Slides presentation}
 
 \item{type}{Type of file to download as output. Usually
 \code{pdf} or \code{pptx}}

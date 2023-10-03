@@ -1,6 +1,6 @@
 #' Download Google Slides
 #'
-#' @param link Link to Google slides presentation
+#' @param link Link to Google Slides presentation
 #' @param type Type of file to download as output. Usually
 #' `pdf` or `pptx`
 #'
